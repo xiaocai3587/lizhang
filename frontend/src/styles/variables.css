@@ -1,0 +1,85 @@
+/* CSS 变量 - 支持浅色/深色模式 */
+:root {
+  /* 背景色 */
+  --bg: #faf8f5;          /* 暖白背景 */
+  --bg-card: #ffffff;     /* 卡片背景 */
+  --bg-hover: #f5f2ed;    /* 悬浮背景 */
+  --bg-elevated: #ffffff; /* 抬升背景(弹窗等) */
+
+  /* 文字色 */
+  --text: #2c2c2c;        /* 主文字 */
+  --text-muted: #8a8a8a;  /* 次要文字 */
+  --text-light: #b0b0b0;  /* 轻文字 */
+
+  /* 主题色 */
+  --accent: #c44536;      /* 暖红主色 */
+  --accent-hover: #a8382c;
+  --accent-light: #fde8e5;
+  --gold: #d4a843;        /* 金色辅色 */
+  --gold-light: #fdf3da;
+
+  /* 边框 */
+  --border: #ebe5dd;      /* 边框 */
+  --border-light: #f0ebe3;
+
+  /* 性别色 */
+  --male: #4a90d9;        /* 男蓝 */
+  --male-light: #e6f0fb;
+  --female: #e8788a;      /* 女粉 */
+  --female-light: #fde8ed;
+
+  /* 状态色 */
+  --success: #52c41a;
+  --warning: #faad14;
+  --danger: #ff4d4f;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+  /* 圆角 */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+}
+
+html.dark {
+  /* 背景色 */
+  --bg: #1a1a2e;
+  --bg-card: #252540;
+  --bg-hover: #2d2d4a;
+  --bg-elevated: #2a2a45;
+
+  /* 文字色 */
+  --text: #e0e0e0;
+  --text-muted: #a0a0b0;
+  --text-light: #707080;
+
+  /* 主题色(保持) */
+  --accent: #d65648;
+  --accent-hover: #e06558;
+  --accent-light: #3a2522;
+  --gold: #d4a843;
+  --gold-light: #3a3220;
+
+  /* 边框 */
+  --border: #353550;
+  --border-light: #2d2d48;
+
+  /* 性别色 */
+  --male: #5a9fd9;
+  --male-light: #1e2840;
+  --female: #e8788a;
+  --female-light: #3d1e25;
+
+  /* 状态色 */
+  --success: #73d13d;
+  --warning: #ffc53d;
+  --danger: #ff7875;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+}

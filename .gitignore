@@ -1,0 +1,51 @@
+# ── Python ───────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# ── Node / 前端 ──────────────────────
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# ── 数据库与备份（含真实礼账数据，切勿上传） ──
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+backend/data/backups/
+
+# ── 日志与临时文件 ───────────────────
+*.log
+logs/
+*.tmp
+*.bak
+
+# ── IDE / 编辑器 ─────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── 操作系统 ─────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── 敏感配置 ─────────────────────────
+.env
+.env.local
+.env.*.local
+secrets.json
