@@ -7,7 +7,8 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - lizhang-data:/app/data
+      # 绑定到本地目录，方便备份；飞牛 OS 可改为 NAS 共享路径
+      - ./data:/app/data
     environment:
       - DATABASE_URL=sqlite:///./data/lizhang.db
     restart: unless-stopped
@@ -16,10 +17,8 @@ services:
     build: ./frontend
     container_name: lizhang-frontend
     ports:
-      - "80:80"
+      # NAS 的 80 端口常被系统占用，改用 8080
+      - "8080:80"
     depends_on:
       - backend
     restart: unless-stopped
-
-volumes:
-  lizhang-data:
