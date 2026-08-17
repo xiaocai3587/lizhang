@@ -1,0 +1,38 @@
+# 防止本地虚拟环境/缓存被拷入镜像
+__pycache__
+*.py[cod]
+*.so
+.venv
+venv
+env
+.Python
+*.egg-info
+.pytest_cache
+.mypy_cache
+
+# 数据库与数据（容器内自建，绝不拷入）
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+data/
+data/backups/
+
+# 日志与临时
+*.log
+*.tmp
+*.bak
+
+# IDE
+.vscode
+.idea
+*.swp
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+.env

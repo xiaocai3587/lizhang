@@ -1,0 +1,25 @@
+# 防止本地 Windows 版 node_modules 被拷入 Linux 镜像
+node_modules
+dist
+dist-ssr
+.vite
+*.local
+
+# 日志与临时
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# IDE
+.vscode
+.idea
+*.swp
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
